@@ -2,7 +2,7 @@
 
 Simply convert greek  to gяεεκ   using this script
 
-#  -- 8th aug, 20:56
+
 
 <table width="100%"   align="center"  class="table_border_both">
 <tr class="heading_table_top">
