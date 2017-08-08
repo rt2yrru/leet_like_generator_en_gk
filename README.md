@@ -39,7 +39,7 @@ Simply convert greek  to gяεεκ   using this script
     <td> 8th Aug </td>
     <td> 22:01 </td>
 		<td> now the loop will break as soon the value is found </td>
-		<td> <a href="https://siddht4.github.io/leet_like_en_gk_gen/0.4/"> 0.3 </a></td>
+		<td> <a href="https://siddht4.github.io/leet_like_en_gk_gen/0.4/"> 0.4 </a></td>
 		
 </tr>
 </table>
