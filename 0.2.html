@@ -1,0 +1,33 @@
+<meta charset="UTF-8"> 
+<script>
+
+function _ab(_word)
+{
+var _en='abcdefghijklmnopqrstuvwxyz';
+var _gk='αβςδεƒgнιjκℓмηορφяsτμvωχλζ';
+document.write(_en+'<br>');
+document.write(_gk+'<br>');
+//var _b=_gk.charCodeAt(0);
+//document.write(_b+'<br>');
+//document.write(_gk[0]);
+
+var _conv='';
+var _len=_word.length;
+document.write(_len+'<br>')
+var _i=0,_j=0;
+for(_i=0;_i<_word.length;_i++)
+{
+	for(_j=0;_j<_en.length;_j++)
+{
+	if(_word[_i]==_en[_j])
+	{
+      _conv+=_gk[_j];
+	}
+}
+}
+
+document.write(_conv)
+}
+
+_ab('greek')
+</script>
