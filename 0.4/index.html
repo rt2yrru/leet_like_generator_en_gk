@@ -1,0 +1,52 @@
+<html>
+<meta charset="UTF-8"> 
+<head>
+  <script type="text/javascript">
+  
+
+    function update()
+    {
+      var numString = document.getElementById('_word').value;
+    
+
+      var output = _ab(numString);
+      document.getElementById('container').innerHTML = output;
+    }
+
+   function _ab(_word)
+{
+var _en='abcdefghijklmnopqrstuvwxyz';
+var _gk='αβςδεƒgнιjκℓмηορφяsτμvωχλζ';
+
+
+var _conv='',_len=_word.length,_i=0,_j=0;
+for(_i=0;_i<_word.length;_i++)
+{
+  for(_j=0;_j<_en.length;_j++)
+{
+ if(_word[_i]==_en[_j])
+  {
+      _conv+=_gk[_j];
+      _j=_en.length;
+  }
+  else 
+  {}
+
+
+}
+}
+
+return _conv;
+}
+  </script>
+
+</head>
+
+<body>
+
+  <input type="text" id="_word" size="70" onkeyup="update();"
+  <br/>
+  <div id="container">  english to greek like leet </div>
+</body>
+
+</html>
