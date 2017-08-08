@@ -34,4 +34,12 @@ Simply convert greek  to gяεεκ   using this script
 		<td> <a href="https://siddht4.github.io/leet_like_en_gk_gen/0.3/"> 0.3 </a></td>
 		
 </tr>
+	  	<tr>
+<td>version 0.4 </td>		
+    <td> 8th Aug </td>
+    <td> 22:01 </td>
+		<td> now the loop will break as soon the value is found </td>
+		<td> <a href="https://siddht4.github.io/leet_like_en_gk_gen/0.4/"> 0.3 </a></td>
+		
+</tr>
 </table>
