@@ -91,10 +91,11 @@ This is a simple form of leet  /  133τ
   <td> 10th Aug</td>
   <td> 02:32</td>
 	<td> multi leet generator </td>
-	<td> when a string is typed undefined is shown </td>
+	<td> when a string is typed undefined is displayed followed by the leet of the string   <a href="https://github.com/siddht4/leet_like_generator_en_gk/issues/1"> Issue #1 </a></td>
 	<td> <a href="https://siddht4.github.io/leet_like_generator_en_gk/under_development/0.6.html"> 0.6 </a></td>
 		
 	</tr>
+	</table>
 	
 	
    
