@@ -92,7 +92,7 @@ This is a simple form of leet  /  133τ
   <td> 02:32</td>
 	<td> multi leet generator </td>
 	<td> when a string is typed undefined is shown </td>
-	<td> <a href="https://siddht4.github.io/leet_like_generator_en_gk/under_development/"> 0.6 </a></td>
+	<td> <a href="https://siddht4.github.io/leet_like_generator_en_gk/under_development/0.6.html"> 0.6 </a></td>
 		
 	</tr>
 	
