@@ -1,0 +1,153 @@
+<html>
+<meta charset="UTF-8"> 
+<head>
+  <script type="text/javascript">
+  
+
+    function update()
+    {
+      var numString = document.getElementById('_word').value;
+    
+
+      var output = _ab(numString);
+      document.getElementById('container').innerHTML = output;
+    }
+
+   function _ab(_word)
+{
+var _conv='',_len=_word.length,_i=0,_j=0,_ch;
+for(_i=0;_i<_len;_i++)
+{
+_ch=_word[_i];
+var _b=_ch.charCodeAt();
+console.log(_b);
+if((_b<=122)&&(_b>=97))
+{
+	if(_b==97)
+	{
+		_conv+=String.fromCharCode(945);
+	}
+	else if(_b==98)
+	{
+		_conv+=String.fromCharCode(946);
+	}
+	else if(_b==99)
+	{
+		_conv+=String.fromCharCode(962);
+	}
+	else if(_b==100)
+	{
+		_conv+=String.fromCharCode(948);
+	}
+	else if(_b==101) //e
+{
+_conv+=String.fromCharCode(949);
+}
+else if(_b==102)
+{
+_conv+=String.fromCharCode(402);
+}
+else if(_b==103)
+{
+_conv+=String.fromCharCode(103);
+}
+else if(_b==104)
+{
+_conv+=String.fromCharCode(1085);
+}
+else if(_b==105)
+{
+_conv+=String.fromCharCode(953);
+}
+else if(_b==106)
+{
+_conv+=String.fromCharCode(106);
+}
+else if(_b==107)
+{
+_conv+=String.fromCharCode(954);
+}
+else if(_b==108)
+{
+_conv+=String.fromCharCode(8467);
+}
+else if(_b==109)
+{
+_conv+=String.fromCharCode(1084);
+}
+else if(_b==110)
+{
+_conv+=String.fromCharCode(951);
+}
+else if(_b==111)
+{
+_conv+=String.fromCharCode(959);
+}
+else if(_b==112)
+{
+_conv+=String.fromCharCode(961);
+}
+else if(_b==113)
+{
+_conv+=String.fromCharCode(966);
+}
+else if(_b==114)
+{
+_conv+=String.fromCharCode(1103);
+}
+else if(_b==115)
+{
+_conv+=String.fromCharCode(115);
+}
+else if(_b==116)
+{
+_conv+=String.fromCharCode(964);
+}
+else if(_b==117)
+{
+_conv+=String.fromCharCode(956);
+}
+else if(_b==118)
+{
+_conv+=String.fromCharCode(118);
+}
+else if(_b==119)
+{
+_conv+=String.fromCharCode(969);
+}
+else if(_b==120)
+{
+_conv+=String.fromCharCode(967);
+}
+else if(_b==121)
+{
+_conv+=String.fromCharCode(955);
+}
+else if(_b==122)
+{
+_conv+=String.fromCharCode(950);
+}
+
+}
+else
+{
+	_conv+=_ch;
+}
+
+}
+
+
+return _conv;
+}
+  </script>
+
+</head>
+
+<body>
+
+  <input type="text" id="_word" size="70" onkeyup="update();"
+  <br/>
+  <div id="container">  english to greek like leet </div>
+</body>
+
+</html>
