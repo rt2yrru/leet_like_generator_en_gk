@@ -57,8 +57,7 @@ This is a simple form of leet  /  133τ
     <td> 10:40 </td>
 		<td>1. changed logic,2.characters not found will remain same </td>
 		<td> <a href="https://siddht4.github.io/leet_like_generator_en_gk/0.5/"> 0.5 </a></td>
-		</tr>
-                 </table>
+		
 
 
 
