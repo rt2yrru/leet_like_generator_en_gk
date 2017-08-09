@@ -11,6 +11,7 @@ This is a simple form of leet  /  133τ
    αβςδεƒgнιjκℓмηορφяsτμvωχλζ
 
 
+#Releases
 
 <table width="100%"   align="center"  class="table_border_both">
 <tr class="heading_table_top">
@@ -70,6 +71,32 @@ This is a simple form of leet  /  133τ
    
    
    Possible leet / 133τ equivalent 
+   
+   
+   
+#Under development
+
+ 
+<table width="100%"   align="center"  class="table_border_both">
+<tr class="heading_table_top">
+	<td> Version</td>
+  <td> Date</td>
+  <td> Time</td>
+	<td> Features </td>
+	<td> Problems </td>
+	<td> Link </td>
+	</tr>
+	<tr>
+	<td> 0.6 test 1</td>
+  <td> 10th Aug</td>
+  <td> 02:32</td>
+	<td> multi leet generator </td>
+	<td> when a string is typed undefined is shown </td>
+	<td> <a href="https://siddht4.github.io/leet_like_generator_en_gk/under_development/"> 0.6 </a></td>
+		
+	</tr>
+	
+	
    
    
    
