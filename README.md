@@ -2,6 +2,12 @@
 
 Simply convert greek  to gяεεκ   using this script
 
+#Character Set
+
+   abcdefghijklmnopqrstuvwxyz
+   
+   αβςδεƒgнιjκℓмηορφяsτμvωχλζ
+
 
 
 <table width="100%"   align="center"  class="table_border_both">
@@ -40,6 +46,14 @@ Simply convert greek  to gяεεκ   using this script
     <td> 22:01 </td>
 		<td> now the loop will break as soon the value is found </td>
 		<td> <a href="https://siddht4.github.io/leet_like_en_gk_gen/0.4/"> 0.4 </a></td>
+		
+</tr>
+	  	<tr>
+<td>version 0.5 </td>		
+    <td> 9th Aug </td>
+    <td> 10:40 </td>
+		<td>1. changed logic,2.characters not found will remain same </td>
+		<td> <a href="https://siddht4.github.io/leet_like_en_gk_gen/0.5/"> 0.5 </a></td>
 		
 </tr>
 </table>
