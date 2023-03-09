@@ -94,8 +94,28 @@ This is a simple form of leet  /  133τ
 	<td> <a href="https://siddht4.github.io/leet_like_generator_en_gk/under_development/0.6.html"> 0.6 </a></td>
 	</tr>
 	</table>
-	
-	
+
+# New version
+
+ 
+<table width="100%"   align="center"  class="table_border_both">
+<tr class="heading_table_top">
+	<td> Version</td>
+  <td> Date</td>
+  <td> Time</td>
+	<td> Features </td>
+	<td> Problems </td>
+	<td> Link </td>
+	</tr>
+	<tr>
+	<td> 0.7 </td>
+  <td> 9th  March 2023</td>
+  <td> 10:30</td>
+	<td> multi leet generator </td>
+	<td> when a string is typed undefined is displayed followed by the leet of the string  </td>
+	<td> <a href="https://siddht4.github.io/leet_like_generator_en_gk/index.html"> 0.7 </a></td>
+	</tr>
+	</table>
    
    
    
