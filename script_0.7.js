@@ -38,3 +38,15 @@ function _ab(_word) {
   }
   return result;
 }
+
+
+
+
+    function update()
+    {
+      var numString = document.getElementById('_word').value;
+    
+
+      var output = _ab(numString);
+      document.getElementById('container').innerHTML = output;
+    }
