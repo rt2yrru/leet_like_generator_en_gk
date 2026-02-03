@@ -1,15 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Leet like character </title>
- <script src="script_0.7.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Greek Leet</title>
+    <style>
+        :root { --primary: #6366f1; --bg: #0f172a; --card: #1e293b; --text: #f8fafc; }
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); padding: 20px; display: flex; justify-content: center; }
+        .wrapper { width: 100%; max-width: 800px; background: var(--card); padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+        
+        /* The "Infinite" Input */
+        textarea { 
+            width: 100%; min-height: 120px; padding: 15px; background: #334155; border: 2px solid #475569; 
+            border-radius: 0.5rem; color: white; font-size: 1rem; resize: vertical; box-sizing: border-box; transition: border-color 0.2s;
+        }
+        textarea:focus { border-color: var(--primary); outline: none; }
+
+        #container { 
+            margin-top: 2rem; padding: 1.5rem; background: #0f172a; border-left: 4px solid var(--primary); 
+            border-radius: 0.5rem; font-size: 1.5rem; line-height: 1.6; min-height: 60px; word-break: break-word; white-space: pre-wrap;
+        }
+
+        .actions { margin-top: 1rem; display: flex; gap: 10px; }
+        button { 
+            padding: 10px 20px; border-radius: 0.5rem; border: none; font-weight: 600; cursor: pointer; transition: transform 0.1s, opacity 0.2s;
+        }
+        .btn-copy { background: var(--primary); color: white; }
+        .btn-roll { background: #475569; color: white; }
+        button:active { transform: scale(0.95); }
+        .copy-status { font-size: 0.9rem; color: #10b981; margin-left: 10px; opacity: 0; transition: opacity 0.3s; }
+    </style>
+</head>
 <body>
 
-  <input type="text" id="_word" size="70" onkeyup="update();">
- 
-  <div id="container">  english to greek like leet </div>
+<div class="wrapper">
+    <h2>Infinite Greek Leet</h2>
+    <textarea id="_word" placeholder="Type your long message here..." oninput="update()"></textarea>
+    
+    <div id="container">Your translation will appear here...</div>
+    
+    <div class="actions">
+        <button class="btn-roll" onclick="update()">Re-roll Icons</button>
+        <button class="btn-copy" onclick="copyText()">Copy Text</button>
+        <span id="status" class="copy-status">Copied!</span>
+    </div>
+</div>
+
+<script>
+    const charMap = {
+        'a': ['α', 'д', '@', '4', 'λ'],
+        'b': ['β', '8', 'в', 'ь'],
+        'c': ['ς', '¢', '©', 'ç'],
+        'd': ['δ', '∂', 'đ'],
+        'e': ['ε', '3', '€', 'є'],
+        'f': ['ƒ', 'ph', 'ғ'],
+        'g': ['g', '9', '6'],
+        'h': ['н', '|-|', 'ħ', 'н'],
+        'i': ['ι', '1', '!', '|'],
+        'j': ['j', 'ʝ', '¿'],
+        'k': ['κ', '|<', 'к'],
+        'l': ['ℓ', '1', '£', '|_'],
+        'm': ['м', '^^', 'м'],
+        'n': ['η', 'и', 'π', 'и'],
+        'o': ['ο', '0', 'θ', 'ø'],
+        'p': ['ρ', 'þ', 'p'],
+        'q': ['φ', 'q', '9'],
+        'r': ['я', '®', '2', 'г'],
+        's': ['s', '5', '$', '§'],
+        't': ['τ', '7', '+', '†'],
+        'u': ['μ', '|_|', 'v'],
+        'v': ['v', '√', '∨'],
+        'w': ['ω', 'vv', 'ш', 'ψ'],
+        'x': ['χ', '×', 'ж'],
+        'y': ['λ', '¥', 'γ'],
+        'z': ['ζ', '2', 'z']
+    };
+
+    function update() {
+        const input = document.getElementById('_word').value;
+        const container = document.getElementById('container');
+        if (!input) {
+            container.innerText = "Your translation will appear here...";
+            return;
+        }
+        container.innerText = translate(input);
+    }
+
+    function translate(word) {
+        return word.split('').map(char => {
+            const lower = char.toLowerCase();
+            const choices = charMap[lower];
+            if (choices) {
+                return choices[Math.floor(Math.random() * choices.length)];
+            }
+            return char;
+        }).join('');
+    }
+
+    async function copyText() {
+        const text = document.getElementById('container').innerText;
+        const status = document.getElementById('status');
+        try {
+            await navigator.clipboard.writeText(text);
+            status.style.opacity = '1';
+            setTimeout(() => status.style.opacity = '0', 2000);
+        } catch (err) {
+            console.error('Failed to copy!', err);
+        }
+    }
+</script>
 
 </body>
 </html>
