@@ -116,6 +116,10 @@ This is a simple form of leet  /  133τ
 	<td> <a href="https://siddht4.github.io/leet_like_generator_en_gk/index.html"> 0.7 </a></td>
 	</tr>
 	</table>
+
+
+
+	Note : New version has Fixed all the issues 
    
    
    
